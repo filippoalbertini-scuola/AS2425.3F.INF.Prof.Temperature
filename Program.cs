@@ -6,17 +6,22 @@ class Program
     {
         Console.WriteLine("Prof;3F;19/10/24;Temperatrue");
 
-        Console.WriteLine("1. -2..5");
-        Console.WriteLine("2.  5..11");
-        Console.WriteLine("3. 11..20");
-        Console.WriteLine("4. 20..31");
-        Console.WriteLine("5. 31..99");
+        Console.WriteLine("Fasce di temperature :");
+        Console.WriteLine("Tipo  Valori");
+        Console.WriteLine("=============");
+        Console.WriteLine(" 1    -2..5");
+        Console.WriteLine(" 2     5..11");
+        Console.WriteLine(" 3    11..20");
+        Console.WriteLine(" 4    20..31");
+        Console.WriteLine(" 5    31..99");
 
         Console.WriteLine("Digita il tipo di temperatura");
 
         int tipoTemperatura = Convert.ToInt32(Console.ReadLine());
-        string fasciaTemperatura = "";
 
+        string fasciaTemperatura;
+
+        // determina la fascia di temperatura
         switch(tipoTemperatura)
         {
             case 1: fasciaTemperatura = "ghiaccio"; break;
